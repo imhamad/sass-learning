@@ -1,0 +1,32 @@
+h1{
+    padding: 1em;
+    text-align: center;
+    border: 2px solid lightyellow;
+    width: 50%;
+    margin: auto;
+    display: block;
+    transition: linear 1s all;
+    &:hover{
+        background-color: darkcyan;
+        color: lightyellow;
+        font-weight: bold;
+        transition: linear 1s all;
+        padding: 1em;
+    }
+}
+p{
+    padding: 1em;
+    text-align: center;
+    border: 2px solid darkblue;
+    width: 50%;
+    margin: auto;
+    display: block;
+    transition: linear 1s all;
+    &:hover{
+        background-color: darkcyan;
+        color: lightyellow;
+        font-weight: bold;
+        padding: 1em;
+    }
+}
+
