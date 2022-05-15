@@ -1,4 +1,21 @@
-h1 {
+html {
+  font-size: 92.5%;
+}
+
+body {
+  background-image: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%);
+}
+
+.main-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 100vw;
+  height: 100vh;
+  font-family: "Courier New", Courier, monospace;
+}
+.main-container h1 {
   padding: 1em;
   text-align: center;
   border: 2px solid lightyellow;
@@ -6,16 +23,21 @@ h1 {
   margin: auto;
   display: block;
   transition: linear 1s all;
+  font-size: 3rem;
 }
-h1:hover {
-  background-color: darkcyan;
+.main-container h1:hover {
+  background-color: rgb(15, 179, 0);
   color: lightyellow;
   font-weight: bold;
   transition: linear 1s all;
   padding: 1em;
 }
-
-p {
+.main-container .main {
+  max-width: 1200px;
+  margin: auto;
+  display: block;
+}
+.main-container p {
   padding: 1em;
   text-align: center;
   border: 2px solid darkblue;
@@ -24,11 +46,18 @@ p {
   display: block;
   transition: linear 1s all;
 }
-p:hover {
-  background-color: darkcyan;
+.main-container p:hover {
+  background-color: darkblue;
   color: lightyellow;
   font-weight: bold;
+  transition: linear 1s all;
   padding: 1em;
+}
+.main-container p::after {
+  content: " Vue JS ";
+}
+.main-container p::before {
+  content: "Next Level ";
 }
 
 /*# sourceMappingURL=style.css.map */

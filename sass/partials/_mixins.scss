@@ -1,0 +1,16 @@
+//mixin
+
+@mixin flexProperty {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   flex-direction: column;
+}
+// Mixin on Hover
+@mixin onHover($hoverColor) {
+   background-color: $hoverColor;
+   color: lightyellow;
+   font-weight: bold;
+   transition: linear 1s all;
+   padding: 1em;
+}

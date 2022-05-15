@@ -1,32 +1,65 @@
-h1{
-    padding: 1em;
-    text-align: center;
-    border: 2px solid lightyellow;
-    width: 50%;
-    margin: auto;
-    display: block;
-    transition: linear 1s all;
-    &:hover{
-        background-color: darkcyan;
-        color: lightyellow;
-        font-weight: bold;
+@import "partials/mixins";
+@import "partials/var";
+// variables in SCSS (they start with $)
+// variables in CSS (--root) or anything with -- are variables
+// Nesting, proper nesting
+// Mixin is sort of function, we can once write it and than just use it by include
+
+html{
+    font-size: 92.5%;
+}
+body{
+    background-image: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%);
+}
+.main-container{
+    // display: grid;
+    @include flexProperty();
+
+    width: 100vw;
+    height: 100vh;
+    font-family: 'Courier New', Courier, monospace;
+    // place-items: center;
+    h1{
+        padding: 1em;
+        text-align: center;
+        border: 2px solid $border;
+        width: 50%;
+        margin: auto;
+        display: block;
         transition: linear 1s all;
+        //operators
+        font-size: 2rem + 2rem - 1rem;
+        &:hover{
+            @include onHover(rgb(15, 179, 0));
+        }
+    }
+    .main{
+        max-width: 1200px;
+        margin:auto;
+        display: block;
+    }
+    p{
         padding: 1em;
+        text-align: center;
+        border: 2px solid darkblue;
+        width: 50%;
+        margin: auto;
+        display: block;
+        transition: linear 1s all;
+        &:hover{
+            @include onHover(darkblue);
+        }
+        &::after{
+            content: ' Vue JS ';
+        }
+        &::before{
+            content: 'Next Level '
+        }
     }
 }
-p{
-    padding: 1em;
-    text-align: center;
-    border: 2px solid darkblue;
-    width: 50%;
-    margin: auto;
-    display: block;
-    transition: linear 1s all;
-    &:hover{
-        background-color: darkcyan;
-        color: lightyellow;
-        font-weight: bold;
-        padding: 1em;
-    }
-}
+
+// main section started 
+
+
+
 
