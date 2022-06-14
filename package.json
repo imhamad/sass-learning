@@ -1,0 +1,32 @@
+{
+  "name": "sass",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "sass/components/footer.scss css/dist/footer.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/imhamad/sass-learning.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/imhamad/sass-learning/issues"
+  },
+  "homepage": "https://github.com/imhamad/sass-learning#readme",
+  "devDependencies": {
+    "webpack": "^5.73.0",
+    "webpack-dev-server": "^4.9.2"
+  },
+  "dependencies": {
+    "css-loader": "^6.7.1",
+    "mini-css-extract-plugin": "^2.6.0",
+    "node-sass": "^7.0.1",
+    "postcss-loader": "^7.0.0",
+    "sass": "^1.52.3",
+    "sass-loader": "^13.0.0"
+  }
+}
